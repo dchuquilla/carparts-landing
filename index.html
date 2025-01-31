@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuienTiene - Encuentra Repuestos para tu Auto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Custom styles for Tailwind colors */
+    .bg-primary {
+      background-color: #363939;
+    }
+
+    .bg-secondary {
+      background-color: #0cb193;
+    }
+
+    .bg-accent {
+      background-color: #295f56;
+    }
+
+    .text-primary {
+      color: #ffffff;
+    }
+
+    .text-secondary {
+      color: #0cb193;
+    }
+
+    .text-accent {
+      color: #295f56;
+    }
+
+    .border-primary {
+      border-color: #363939;
+    }
+
+    .border-secondary {
+      border-color: #0cb193;
+    }
+
+    .border-accent {
+      border-color: #295f56;
+    }
+
+    /* Custom gradients */
+    .gradient-hero {
+      background: linear-gradient(135deg, #0cb193 0%, #295f56 100%);
+    }
+
+    .gradient-cta {
+      background: linear-gradient(135deg, #363939 0%, #515050 100%);
+    }
+  </style>
+</head>
+
+<body class="font-sans bg-white text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-primary text-primary py-4 shadow-lg">
+    <div class="container mx-auto flex justify-between items-center px-4">
+      <div class="text-2xl font-bold">QuienTiene</div>
+      <nav class="space-x-4">
+        <a href="#features" class="hover:text-secondary">Características</a>
+        <a href="#cta" class="hover:text-secondary">Probar Ahora</a>
+        <a href="#contact" class="hover:text-secondary">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="gradient-hero text-primary py-20">
+    <div class="container mx-auto text-center">
+      <h1 class="text-5xl font-bold mb-4">Encuentra Repuestos para tu Auto</h1>
+      <p class="text-xl mb-8">Nuestro chatbot te ayuda a localizar repuestos en nuestra red de tiendas de manera rápida
+        y sencilla.</p>
+      <a href="#cta" class="bg-secondary text-primary py-3 px-6 rounded-lg shadow-lg hover:bg-accent">Probar Ahora</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 bg-gray-100">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-8">¿Por qué elegir QuienTiene?</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1: Chatbot Inteligente -->
+        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+          <i class="fas fa-robot text-4xl mb-4 text-secondary"></i>
+          <h2 class="text-2xl font-bold mb-2">Chatbot Inteligente</h2>
+          <p class="text-gray-600">Nuestro chatbot utiliza inteligencia artificial para ayudarte a encontrar repuestos
+            de manera eficiente.</p>
+        </div>
+
+        <!-- Feature 2: Amplia Red de Tiendas -->
+        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+          <i class="fas fa-store text-4xl mb-4 text-secondary"></i>
+          <h2 class="text-2xl font-bold mb-2">Amplia Red de Tiendas</h2>
+          <p class="text-gray-600">Accede a repuestos disponibles en nuestra extensa red de tiendas asociadas.</p>
+        </div>
+
+        <!-- Feature 3: Soporte 24/7 -->
+        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
+          <i class="fas fa-headset text-4xl mb-4 text-secondary"></i>
+          <h2 class="text-2xl font-bold mb-2">Soporte 24/7</h2>
+          <p class="text-gray-600">Nuestro equipo está disponible para ayudarte en cualquier momento.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section id="cta" class="gradient-cta text-primary py-16">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">¿Listo para encontrar tus repuestos?</h2>
+      <a href="#chatbot" class="bg-secondary text-primary py-3 px-6 rounded-lg shadow-lg hover:bg-accent">Probar el
+        Chatbot</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-accent text-primary py-8">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2023 QuienTiene. Todos los derechos reservados. | <a href="#privacy"
+          class="hover:text-secondary">Política de Privacidad</a> | <a href="#terms"
+          class="hover:text-secondary">Términos de Servicio</a></p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

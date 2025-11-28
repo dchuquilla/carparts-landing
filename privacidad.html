@@ -10,42 +10,33 @@
   <link rel="manifest" href="/site.webmanifest" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    .bg-primary { background-color: #363939; }
-    .bg-secondary { background-color: #0cb193; }
-    .bg-accent { background-color: #295f56; }
-    .text-primary { color: #ffffff; }
-    .text-secondary { color: #0cb193; }
-    .text-accent { color: #295f56; }
-    .text-black-title { color: #111827; }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="font-sans bg-white text-gray-800">
+<body class="site-body">
   <!-- Header -->
-  <header class="bg-primary text-primary py-4 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center px-4">
-      <div class="text-2xl font-bold">
-        <a href="/"><img src="quien_tiene_logo_c.jpg" alt="QuienTiene" class="h-12"></a>
-      </div>
-      <nav class="space-x-4">
-        <a href="/index.html#features" class="hover:text-secondary">Características</a>
-        <a href="/index.html#pricing" class="hover:text-secondary">Planes</a>
-        <a href="/index.html#cta" class="hover:text-secondary">Probar Ahora</a>
-          <a href="contacto.html" class="hover:text-secondary" aria-label="Contacto">Contacto</a>
+  <header class="site-header">
+    <div class="container flex justify-between items-center">
+      <a href="/"><img src="quien_tiene_logo_c.jpg" alt="QuienTiene" class="logo-img" /></a>
+      <nav class="nav space-x-2">
+        <a href="/index.html#features" class="link-underline">Características</a>
+        <a href="/index.html#pricing" class="link-underline">Planes</a>
+        <a href="/index.html#cta" class="link-underline">Probar Ahora</a>
+        <a href="contacto.html" class="link-underline" aria-label="Contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main class="container mx-auto px-4 py-12">
-    <h1 class="text-3xl font-bold mb-6 text-center">Política de Privacidad</h1>
-    <p class="mb-4">Esta Política de Privacidad regula el tratamiento de datos personales en QuienTiene.com, conforme a la Ley Orgánica de Protección de Datos Personales (LOPDP) de Ecuador. QuienTiene.com es una plataforma que conecta propietarios de vehículos con tiendas de repuestos, facilitando la búsqueda y cotización, pero no comercializa ni vende directamente ningún producto. La venta y negociación de repuestos es 100% externa y queda fuera de la responsabilidad de QuienTiene.com.</p>
+  <main class="container section-tight">
+    <h1 class="text-3xl center mb-4">Política de Privacidad</h1>
+    <div class="accent-line mx-auto"></div>
+    <p class="mb-4 text-dim">Esta Política de Privacidad regula el tratamiento de datos personales en QuienTiene.com, conforme a la Ley Orgánica de Protección de Datos Personales (LOPDP) de Ecuador. QuienTiene.com conecta propietarios con tiendas de repuestos y no comercializa directamente productos; la negociación es externa a la plataforma.</p>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">1. Identificación del Responsable</h2>
-    <p class="mb-4">QuienTiene.com, responsable del tratamiento de datos personales, está domiciliado en Quito, Ecuador. Para consultas sobre privacidad, puedes contactarnos en <a href="mailto:soporte@quientiene.com" class="text-secondary underline">soporte@quientiene.com</a>.</p>
+    <p class="mb-4 text-dim">QuienTiene.com, responsable del tratamiento de datos personales, está domiciliado en Quito, Ecuador. Para consultas sobre privacidad, puedes contactarnos en <a href="mailto:soporte@quientiene.com" class="link-underline">soporte@quientiene.com</a>.</p>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">2. Definiciones</h2>
-    <ul class="mb-4 list-disc pl-6 text-gray-700">
+    <ul class="mb-4 list-disc pl-6 text-dim">
       <li><strong>LOPDP:</strong> Ley Orgánica de Protección de Datos Personales de Ecuador.</li>
       <li><strong>Responsable del Tratamiento:</strong> QuienTiene.com, quien determina la finalidad y medios para el tratamiento de datos personales.</li>
       <li><strong>Titular:</strong> Persona natural cuyos datos son objeto de tratamiento.</li>
@@ -56,8 +47,8 @@
     </ul>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">3. Alcance y Modalidades de Tratamiento</h2>
-    <p class="mb-4">Recopilamos y tratamos datos personales de propietarios y tiendas para facilitar la conexión y cotización de repuestos. Los datos pueden provenir de:</p>
-    <ul class="mb-4 list-disc pl-6 text-gray-700">
+    <p class="mb-4 text-dim">Recopilamos y tratamos datos personales de propietarios y tiendas para facilitar la conexión y cotización de repuestos. Los datos pueden provenir de:</p>
+    <ul class="mb-4 list-disc pl-6 text-dim">
       <li>Datos entregados por el titular al registrarse o solicitar repuestos.</li>
       <li>Datos generados por la relación contractual o uso de la plataforma.</li>
       <li>Datos inferidos para mejorar el servicio (perfilado, preferencias).</li>
@@ -67,7 +58,7 @@
     <p class="mb-4">No compartimos datos personales con terceros sin consentimiento, salvo requerimiento legal o para cumplir con obligaciones contractuales y de seguridad.</p>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">4. Finalidad del Tratamiento</h2>
-    <ul class="mb-4 list-disc pl-6 text-gray-700">
+    <ul class="mb-4 list-disc pl-6 text-dim">
       <li>Conectar propietarios con tiendas verificadas y facilitar cotizaciones.</li>
       <li>Verificar identidad y legitimidad de tiendas para prevenir fraudes y suplantaciones.</li>
       <li>Proveer soporte, mejorar el servicio y cumplir obligaciones legales.</li>
@@ -76,8 +67,8 @@
     </ul>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">5. Consentimiento y Derechos del Titular</h2>
-    <p class="mb-4">El titular acepta esta política al registrarse o usar la plataforma. Puede ejercer sus derechos de acceso, rectificación, actualización, oposición, portabilidad y supresión (derecho al olvido) en cualquier momento, contactando a soporte.</p>
-    <ul class="mb-4 list-disc pl-6 text-gray-700">
+    <p class="mb-4 text-dim">El titular acepta esta política al registrarse o usar la plataforma. Puede ejercer sus derechos de acceso, rectificación, actualización, oposición, portabilidad y supresión (derecho al olvido) en cualquier momento, contactando a soporte.</p>
+    <ul class="mb-4 list-disc pl-6 text-dim">
       <li>Solicitar la eliminación total de su cuenta y datos asociados.</li>
       <li>Solicitar la eliminación de solicitudes de repuestos y datos de contacto.</li>
       <li>Recibir respuesta inicial en máximo 5 días hábiles y ejecución en hasta 30 días naturales.</li>
@@ -86,36 +77,36 @@
     </ul>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">6. Medidas de Seguridad</h2>
-    <p class="mb-4">Aplicamos medidas técnicas, físicas y organizativas razonables para proteger los datos frente a accesos no autorizados, pérdida o alteración. El acceso interno se limita por rol y necesidad. Usamos cifrado, firewalls y protocolos seguros. Sin embargo, el usuario reconoce que ningún sistema es 100% invulnerable.</p>
+    <p class="mb-4 text-dim">Aplicamos medidas técnicas, físicas y organizativas razonables para proteger los datos frente a accesos no autorizados, pérdida o alteración. El acceso interno se limita por rol y necesidad. Usamos cifrado, firewalls y protocolos seguros. Sin embargo, ningún sistema es 100% invulnerable.</p>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">7. Comunicaciones y Transferencias</h2>
-    <p class="mb-4">No vendemos datos. Podemos compartir información con proveedores que actúan como encargados (alojamiento, mensajería, analítica) bajo contratos que exigen confidencialidad y seguridad equivalentes. En caso de requerimiento legal, autoridad competente o prevención de fraude, los datos pueden ser comunicados conforme a la ley.</p>
+    <p class="mb-4 text-dim">No vendemos datos. Podemos compartir información con proveedores encargados (alojamiento, mensajería, analítica) bajo obligaciones de confidencialidad y seguridad. En caso de requerimiento legal, autoridad competente o prevención de fraude, los datos pueden ser comunicados conforme a la ley.</p>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">8. Uso de WhatsApp y comunicaciones</h2>
-    <p class="mb-4">Si nos contactas por WhatsApp, asumimos tu autorización para responder por ese canal. Puedes pedir dejar de recibir mensajes en cualquier momento. Los mensajes pueden ser almacenados para seguimiento y mejora del servicio.</p>
+    <p class="mb-4 text-dim">Si nos contactas por WhatsApp, asumimos tu autorización para responder por ese canal. Puedes pedir dejar de recibir mensajes en cualquier momento. Los mensajes pueden conservarse para mejora del servicio.</p>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">9. Menores de Edad</h2>
-    <p class="mb-4">La plataforma está dirigida exclusivamente a personas mayores de 18 años. Si detectamos que un usuario es menor de edad, se bloqueará el acceso y se eliminarán sus datos.</p>
+    <p class="mb-4 text-dim">La plataforma se dirige a personas mayores de 18 años. Si detectamos un menor, se bloqueará la cuenta y se eliminarán los datos.</p>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">10. Conservación de Datos</h2>
-    <p class="mb-4">Los datos personales se conservarán durante el tiempo necesario para cumplir con las finalidades señaladas o por requerimiento legal. Cuando ya no sean necesarios, se eliminarán o anonimizarán.</p>
+    <p class="mb-4 text-dim">Los datos se conservan mientras sean necesarios para las finalidades o exigencias legales y luego se eliminan o anonimizan.</p>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">11. Modificaciones y Vigencia</h2>
-    <p class="mb-4">Esta política puede actualizarse periódicamente. Publicaremos la versión vigente e indicaremos la fecha de actualización. El uso continuado implica aceptación.</p>
+    <p class="mb-4 text-dim">Esta política puede actualizarse. Publicaremos versiones vigentes y fechas; el uso continuado implica aceptación.</p>
 
     <h2 class="text-xl font-semibold mb-2 mt-6">12. Contacto</h2>
-    <p class="mb-4">Si tienes dudas o deseas ejercer tus derechos, escríbenos a <a href="mailto:soporte@quientiene.com" class="text-secondary underline">soporte@quientiene.com</a> o por WhatsApp <a href="https://wa.me/593961674787" target="_blank" class="text-secondary">+593 96 167 4787</a>.</p>
-    <div class="mt-12 text-center">
-      <a href="index.html" class="text-accent hover:underline">Volver al inicio</a>
+    <p class="mb-4 text-dim">Si tienes dudas o deseas ejercer tus derechos, escríbenos a <a href="mailto:soporte@quientiene.com" class="link-underline">soporte@quientiene.com</a> o por WhatsApp <a href="https://wa.me/593961674787" target="_blank" class="link-underline">+593 96 167 4787</a>.</p>
+    <div class="mt-12 center">
+      <a href="index.html" class="btn btn-outline" aria-label="Volver al inicio">Volver al inicio</a>
     </div>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-accent text-primary py-8">
-    <div class="container mx-auto text-center">
+  <footer class="site-footer">
+    <div class="container center">
       <p>&copy; 2023–2025 QuienTiene.com. Todos los derechos reservados. |
-        <a href="/privacidad.html" class="hover:text-secondary">Política de Privacidad</a> |
-        <a href="/terminos.html" class="hover:text-secondary">Términos y Condiciones</a>
+        <a href="/privacidad.html">Política de Privacidad</a> |
+        <a href="/terminos.html">Términos y Condiciones</a>
       </p>
     </div>
   </footer>

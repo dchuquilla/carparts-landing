@@ -15,53 +15,7 @@
   <link rel="manifest" href="/site.webmanifest" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    /* Custom styles for Tailwind colors */
-    .bg-primary {
-      background-color: #363939;
-    }
-
-    .bg-secondary {
-      background-color: #0cb193;
-    }
-
-    .bg-accent {
-      background-color: #295f56;
-    }
-
-    .text-primary {
-      color: #ffffff;
-    }
-
-    .text-secondary {
-      color: #0cb193;
-    }
-
-    .text-accent {
-      color: #295f56;
-    }
-
-    .border-primary {
-      border-color: #363939;
-    }
-
-    .border-secondary {
-      border-color: #0cb193;
-    }
-
-    .border-accent {
-      border-color: #295f56;
-    }
-
-    /* Custom gradients */
-    .gradient-hero {
-      background: linear-gradient(135deg, #0cb193 0%, #295f56 100%);
-    }
-
-    .gradient-cta {
-      background: linear-gradient(135deg, #363939 0%, #515050 100%);
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
   <meta property="og:title" content="QuienTiene - Encuentra Repuestos para tu Auto">
   <meta property="og:description"
     content="Encuentra repuestos para tu auto de manera rápida y sencilla con QuienTiene.">
@@ -69,173 +23,139 @@
   <meta property="og:url" content="https://tudominio.com">
 </head>
 
-<body class="font-sans bg-white text-gray-800">
+<body class="site-body">
 
   <!-- Header -->
-  <header class="bg-primary text-primary py-4 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center px-4">
-      <div class="text-2xl font-bold">
-        <a href="/">
-          <img src="quien_tiene_logo_c.jpg" alt="QuienTiene" class="h-12">
-        </a>
-      </div>
-      <nav class="space-x-4">
-        <a href="#features" class="hover:text-secondary" aria-label="Características">Características</a>
-        <a href="#pricing" class="hover:text-secondary" aria-label="Planes y Precios">Planes</a>
-        <a href="#cta" class="hover:text-secondary" aria-label="Probar Ahora">Probar Ahora</a>
-        <a href="contacto.html" class="hover:text-secondary" aria-label="Contacto">Contacto</a>
+  <header class="site-header">
+    <div class="container flex justify-between items-center">
+      <a href="/">
+        <img src="quien_tiene_logo_c.jpg" alt="QuienTiene" class="logo-img" />
+      </a>
+      <nav class="nav space-x-2">
+        <a href="#features" class="link-underline">Características</a>
+        <a href="#pricing" class="link-underline">Planes</a>
+        <a href="#cta" class="link-underline">Probar Ahora</a>
+        <a href="contacto.html" class="link-underline">Contacto</a>
       </nav>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="gradient-hero text-primary py-20">
-    <div class="container mx-auto flex flex-col md:flex-row items-center">
-      <h1 class="text-5xl font-bold mb-4">Tu repuesto ideal, sin complicaciones</h1>
-    </div>
-    <div class="container mx-auto mt-4 flex flex-col md:flex-row items-top">
-      <div class="md:w-1/2 p-3">
-        <h2 class="text-3xl font-bold mb-4">¿Buscas un repuesto?</h2>
-        <p class="text-xl mb-8">
-          Nuestro chatbot te ayuda a localizar repuestos en nuestra red de tiendas de manera rápida
-          y sencilla. Todas nuestras tiendas son verificadas una por una para evitar fraudes, estafas y suplantaciones de
-          identidad. Tu seguridad es nuestra prioridad.
-        </p>
-        <p>
-          <a href="https://wa.me/593961674787?text=Hola%20QuienTiene" class="bg-secondary text-primary py-4 px-8 rounded-lg shadow-lg hover:bg-accent w-full block text-center text-2xl flex items-center justify-center space-x-2">
-            <i class="fab fa-whatsapp text-3xl"></i>
-            <span>Pedir mi repuesto ahora</span>
+  <section class="hero section">
+    <div class="container">
+      <h1 class="punch">Tu repuesto ideal, sin complicaciones</h1>
+      <div class="accent-line"></div>
+      <div class="grid gap-4 md:flex md:gap-8 mt-4">
+        <div class="md:w-1/2 card">
+          <h2 class="text-2xl mb-3">¿Buscas un repuesto?</h2>
+          <p class="lead mb-4">Nuestro robot conecta tu necesidad con una red verificada de tiendas para que obtengas respuestas rápidas y seguras. Evitamos fraudes y suplantaciones: tu confianza es prioridad.</p>
+          <a href="https://wa.me/593961674787?text=Hola%20QuienTiene" class="btn btn-large btn-block btn-pulse" aria-label="Pedir repuesto vía WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+            <span>Pedir mi repuesto</span>
           </a>
-        </p>
-      </div>
-      <div class="md:w-1/2 p-3">
-        <h2 class="text-3xl font-bold mb-4">¿Vendes repuestos?</h2>
-        <p class="text-xl mb-8">
-          Registra tu tienda en nuestra plataforma y llega a más clientes a nivel nacional. Por solo $10 al mes,
-          podrás acceder a un catálogo de solicitudes de repuestos y aumentar tus ventas hasta en un 20%.
-          Recupera la inversión con la primera venta.
-        </p>
-        <p>
-          <a href="https://web.quientiene.com/users/new" class="bg-secondary text-primary py-4 px-8 rounded-lg shadow-lg hover:bg-accent w-full block text-center text-2xl flex items-center justify-center space-x-2">
-            <i class="fas fa-store text-3xl"></i>
+        </div>
+        <div class="md:w-1/2 card card-accent">
+          <h2 class="text-2xl mb-3">¿Vendes repuestos?</h2>
+          <p class="lead mb-4">Registra tu tienda y accede al flujo nacional de solicitudes. Incrementa tus ventas hasta un 20% con cotizaciones dirigidas y recupera la inversión en la primera operación.</p>
+          <a href="https://web.quientiene.com/users/new" class="btn btn-large btn-block" aria-label="Registrar negocio">
+            <i class="fas fa-store"></i>
             <span>Registrar mi negocio</span>
           </a>
-        </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="py-16 bg-gray-100">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-8 text-black-title">¿Por qué elegir QuienTiene?</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Feature 1: Chatbot Inteligente -->
-        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
-          <i class="fas fa-robot text-4xl mb-4 text-secondary"></i>
-          <h2 class="text-2xl font-bold mb-2">Chatbot Inteligente</h2>
-          <p class="text-gray-600">Nuestro chatbot utiliza inteligencia artificial para ayudarte a encontrar repuestos
-            de manera eficiente.</p>
+  <section id="features" class="section bg-dark-alt">
+    <div class="container">
+      <h2 class="text-3xl center mb-6">¿Por qué elegir QuienTiene?</h2>
+      <div class="grid columns-3 gap-4">
+        <div class="card center">
+          <i class="fas fa-robot text-accent text-4xl mb-2"></i>
+          <h3>Chatbot Inteligente</h3>
+          <p class="text-dim">IA enfocada en coincidencias rápidas y relevantes.</p>
         </div>
-
-        <!-- Feature 2: Amplia Red de Tiendas -->
-        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
-          <i class="fas fa-store text-4xl mb-4 text-secondary"></i>
-          <h2 class="text-2xl font-bold mb-2">Amplia Red de Tiendas Verificadas</h2>
-          <p class="text-gray-600">Todas las tiendas han sido revisadas individualmente para mayor seguridad de los
-            propietarios de autos.</p>
+        <div class="card center">
+          <i class="fas fa-store text-accent text-4xl mb-2"></i>
+          <h3>Red Verificada</h3>
+          <p class="text-dim">Cada tienda pasa filtros anti fraude y suplantación.</p>
         </div>
-
-        <!-- Feature 3: Soporte 24/7 -->
-        <div class="text-center bg-white p-6 rounded-lg shadow-lg">
-          <i class="fas fa-headset text-4xl mb-4 text-secondary"></i>
-          <h2 class="text-2xl font-bold mb-2">Soporte 24/7</h2>
-          <p class="text-gray-600">Nuestro equipo está disponible para ayudarte en cualquier momento.</p>
+        <div class="card center">
+          <i class="fas fa-headset text-accent text-4xl mb-2"></i>
+          <h3>Soporte 24/7</h3>
+          <p class="text-dim">Acompañamiento permanente para tus solicitudes críticas.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Call to Action Section -->
-  <section id="cta" class="relative text-primary py-16 overflow-hidden" style="background: none;">
-    <div class="absolute inset-0 w-full h-full bg-fixed bg-center bg-cover" style="background-image: url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80'); z-index: 0;">
-      <div class="w-full h-full bg-black opacity-60"></div>
-    </div>
-    <div class="container mx-auto text-center relative z-10">
-      <h2 class="text-4xl font-bold mb-4 drop-shadow-lg">¿Listo para encontrar tus repuestos?</h2>
-      <a href="https://wa.me/593961674787?text=Hola%20QuienTiene" target="_blank"
-        class="bg-secondary text-primary py-3 px-6 rounded-lg shadow-lg hover:bg-accent transition" style="font-size: 25px; margin-top: 70px; display: block;">Pedir mi repuesto ahora</a>
+  <section id="cta" class="section cta-section">
+    <div class="bg-image-overlay" style="background-image:url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1200&q=80');"></div>
+    <div class="container cta-inner center">
+      <h2 class="text-3xl mb-4">¿Listo para encontrar tus repuestos?</h2>
+      <a href="https://wa.me/593961674787?text=Hola%20QuienTiene" target="_blank" class="btn btn-large btn-pulse" aria-label="Abrir WhatsApp para pedir repuesto">Pedir mi repuesto ahora</a>
     </div>
   </section>
 
   <!-- Testimonials Section -->
-  <section id="testimonials" class="py-16 bg-gray-50">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 text-black-title">Lo que dicen nuestros clientes</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <!-- Testimonial 1 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente 1" class="w-20 h-20 rounded-full mb-4">
-          <p class="text-gray-700 mb-4 italic">"Encontré el repuesto que buscaba en minutos. El chatbot es súper fácil de usar y las tiendas son confiables."</p>
-          <span class="font-bold text-secondary">Carlos M.</span>
+  <section id="testimonials" class="section">
+    <div class="container">
+      <h2 class="text-3xl center mb-6">Lo que dicen nuestros clientes</h2>
+      <div class="grid columns-3 gap-4">
+        <div class="testimonial card center">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente Carlos" class="w-20 h-20 rounded-full mb-3" />
+          <p class="text-dim italic mb-3">"Encontré el repuesto que buscaba en minutos. Todo muy confiable."</p>
+          <span class="font-semibold">Carlos M.</span>
         </div>
-        <!-- Testimonial 2 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente 2" class="w-20 h-20 rounded-full mb-4">
-          <p class="text-gray-700 mb-4 italic">"Me sentí segura comprando aquí porque todas las tiendas están verificadas. ¡Excelente servicio!"</p>
-          <span class="font-bold text-secondary">Andrea P.</span>
+        <div class="testimonial card center">
+          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente Andrea" class="w-20 h-20 rounded-full mb-3" />
+          <p class="text-dim italic mb-3">"Tiendas verificadas y proceso claro. Me sentí segura comprando."</p>
+          <span class="font-semibold">Andrea P.</span>
         </div>
-        <!-- Testimonial 3 -->
-        <div class="bg-white p-6 rounded-lg shadow-lg flex flex-col items-center text-center">
-          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Cliente 3" class="w-20 h-20 rounded-full mb-4">
-          <p class="text-gray-700 mb-4 italic">"El soporte 24/7 me ayudó cuando tenía dudas. Recomiendo QuienTiene a todos mis amigos."</p>
-          <span class="font-bold text-secondary">Luis F.</span>
+        <div class="testimonial card center">
+          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Cliente Luis" class="w-20 h-20 rounded-full mb-3" />
+          <p class="text-dim italic mb-3">"Soporte atento y rápido. Lo recomiendo a mis colegas."</p>
+          <span class="font-semibold">Luis F.</span>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Pricing Section -->
-  <section id="pricing" class="py-16 bg-white">
-    <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10 text-black-title">Planes y Precios</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-        <!-- Propietarios -->
-        <div class="bg-gray-100 p-8 rounded-lg shadow-lg flex flex-col items-center text-center border-2 border-secondary">
-          <h3 class="text-2xl font-bold mb-2 text-secondary">Propietarios</h3>
-          <p class="text-4xl font-extrabold mb-4 text-black">Gratis</p>
-          <ul class="mb-6 text-gray-700 space-y-2">
-            <li><i class="fas fa-check text-secondary mr-2"></i>Acceso 24/7 al bot</li>
-            <li><i class="fas fa-check text-secondary mr-2"></i>Soporte 24/7</li>
+  <section id="pricing" class="section bg-dark-alt">
+    <div class="container">
+      <h2 class="text-3xl center mb-6">Planes y Precios</h2>
+      <div class="grid gap-4 md:grid-cols-2">
+        <div class="card pricing-card">
+          <h3 class="mb-2">Propietarios</h3>
+          <p class="price-tag">Gratis</p>
+          <ul class="text-dim mb-4">
+            <li>Acceso 24/7 al bot</li>
+            <li>Soporte 24/7</li>
           </ul>
-          <a href="https://wa.me/593961674787?text=Hola%20QuienTiene" 
-          class="bg-secondary text-primary px-4 py-2 rounded-full font-semibold" style="font-size: 20px; margin-top: 10px; display: block;">Sin costo</a>
+          <a href="https://wa.me/593961674787?text=Hola%20QuienTiene" class="btn btn-block" aria-label="Plan propietarios">Sin costo</a>
         </div>
-        <!-- Tiendas -->
-        <div class="bg-white p-8 rounded-lg shadow-lg flex flex-col items-center text-center border-2 border-accent">
-          <h3 class="text-2xl font-bold mb-2 text-accent">Tiendas de repuestos</h3>
-          <p class="text-4xl font-extrabold mb-1 text-black">$10 <span class="text-lg font-normal text-gray-600">/mes</span>
-          </p>
-          <p>&nbsp;</p>
-          <ul class="mb-6 text-gray-700 space-y-2">
-            <li><i class="fas fa-check text-accent mr-2"></i>Aumento de hasta 20% en las ventas</li>
-            <li><i class="fas fa-check text-accent mr-2"></i>Soporte 24/7</li>
-            <li><i class="fas fa-check text-accent mr-2"></i>Acceso al catálogo de solicitudes</li>
-            <li><i class="fas fa-check text-accent mr-2"></i>Recupera la inversión en la primera venta</li>
+        <div class="card pricing-card card-accent">
+          <h3 class="mb-2">Tiendas de repuestos</h3>
+          <p class="price-tag">$10 <span class="price-period">/mes</span></p>
+          <ul class="text-dim mb-4">
+            <li>Aumento estimado hasta 20%</li>
+            <li>Soporte 24/7</li>
+            <li>Catálogo de solicitudes</li>
+            <li>Recupera inversión en primera venta</li>
           </ul>
-          <a href="https://web.quientiene.com/users/new" target="_blank"
-            class="bg-accent text-primary px-4 py-2 rounded-full font-semibold hover:bg-secondary transition" style="font-size: 20px; margin-top: 10px; display: block;">Registrarme</a>
+          <a href="https://web.quientiene.com/users/new" target="_blank" class="btn btn-block" aria-label="Registrar tienda">Registrarme</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-accent text-primary py-8">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2023 QuienTiene. Todos los derechos reservados. | <a href="privacidad.html"
-          class="hover:text-secondary">Política de Privacidad</a> | <a href="terminos.html"
-          class="hover:text-secondary">Términos de Servicio</a></p>
+  <footer class="site-footer">
+    <div class="container center">
+      <p>&copy; 2023 QuienTiene. Todos los derechos reservados. | <a href="privacidad.html">Política de Privacidad</a> | <a href="terminos.html">Términos de Servicio</a></p>
     </div>
   </footer>
 

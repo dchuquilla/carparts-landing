@@ -13,77 +13,52 @@
   <link rel="manifest" href="/site.webmanifest" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    .bg-primary { background-color: #363939; }
-    .bg-secondary { background-color: #0cb193; }
-    .bg-accent { background-color: #295f56; }
-    .text-primary { color: #ffffff; }
-    .text-secondary { color: #0cb193; }
-    .text-accent { color: #295f56; }
-    .border-primary { border-color: #363939; }
-    .border-secondary { border-color: #0cb193; }
-    .border-accent { border-color: #295f56; }
-    .gradient-hero { background: linear-gradient(135deg, #0cb193 0%, #295f56 100%); }
-    .gradient-cta { background: linear-gradient(135deg, #363939 0%, #515050 100%); }
-    .vcard-shadow { box-shadow: 0 4px 24px rgba(44, 62, 80, 0.12); }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
   <meta property="og:title" content="QuienTiene - Contacto">
   <meta property="og:description" content="Contacto QuienTiene.com - Encuentra repuestos para tu auto de manera rápida y sencilla.">
   <meta property="og:image" content="https://tudominio.com/logo.png">
   <meta property="og:url" content="https://tudominio.com/contacto.html">
 </head>
-<body class="font-sans bg-white text-gray-800">
+<body class="site-body">
   <!-- Header -->
-  <header class="bg-primary text-primary py-4 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center px-4">
-      <div class="text-2xl font-bold">
-        <a href="/">
-          <img src="quien_tiene_logo_c.jpg" alt="QuienTiene" class="h-12">
-        </a>
-      </div>
-      <nav class="space-x-4">
-        <a href="index.html#features" class="hover:text-secondary" aria-label="Características">Características</a>
-        <a href="index.html#pricing" class="hover:text-secondary" aria-label="Planes y Precios">Planes</a>
-        <a href="index.html#cta" class="hover:text-secondary" aria-label="Probar Ahora">Probar Ahora</a>
-        <a href="contacto.html" class="hover:text-secondary font-bold underline" aria-label="Contacto">Contacto</a>
+  <header class="site-header">
+    <div class="container flex justify-between items-center">
+      <a href="/">
+        <img src="quien_tiene_logo_c.jpg" alt="QuienTiene" class="logo-img" />
+      </a>
+      <nav class="nav space-x-2">
+        <a href="index.html#features" class="link-underline">Características</a>
+        <a href="index.html#pricing" class="link-underline">Planes</a>
+        <a href="index.html#cta" class="link-underline">Probar Ahora</a>
+        <a href="contacto.html" class="link-underline" aria-label="Contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
   <!-- Contact vCard Section -->
-  <section class="gradient-hero text-primary py-20">
-    <div class="container mx-auto flex flex-col items-center justify-center">
-      <div class="bg-white rounded-xl vcard-shadow p-8 w-full max-w-md border-2 border-secondary">
-        <div class="flex flex-col items-center mb-6">
-          <img src="quien_tiene_logo_c.jpg" alt="QuienTiene Logo" class="h-20 mb-4 rounded-full border-2 border-secondary">
-          <h1 class="text-3xl font-bold text-secondary mb-2">QuienTiene.com</h1>
-          <p class="text-gray-700 text-center mb-2">Encuentra repuestos para tu auto de manera rápida y segura. Somos tu aliado confiable en el mundo automotriz.</p>
+  <section class="hero section">
+    <div class="container flex flex-col items-center">
+      <div class="card" style="max-width:520px; width:100%;">
+        <div class="center mb-4">
+          <img src="quien_tiene_logo_c.jpg" alt="QuienTiene Logo" class="logo-img mb-3" />
+          <h1 class="text-2xl mb-2">QuienTiene.com</h1>
+          <div class="accent-line"></div>
+          <p class="text-dim">Encuentra repuestos de forma segura y directa en una red verificada.</p>
         </div>
-        <div class="space-y-4 mb-6">
-          <div class="flex items-center space-x-3">
-            <i class="fas fa-phone text-secondary text-xl"></i>
-            <a href="https://wa.me/593961674787?text=Hola%20QuienTiene" class="text-secondary hover:underline">+593 961 674 787</a>
-          </div>
-          <div class="flex items-center space-x-3">
-            <i class="fas fa-globe text-secondary text-xl"></i>
-            <a href="https://quientiene.com" class="text-secondary hover:underline" target="_blank">quientiene.com</a>
-          </div>
-          <div class="flex items-center space-x-3">
-            <i class="fas fa-envelope text-secondary text-xl"></i>
-            <a href="mailto:info@quientiene.com" class="text-secondary hover:underline">info@quientiene.com</a>
-          </div>
+        <div class="mb-4">
+          <div class="flex items-center gap-3 mb-2"><i class="fas fa-phone text-accent"></i><a href="https://wa.me/593961674787?text=Hola%20QuienTiene" class="link-underline">+593 961 674 787</a></div>
+          <div class="flex items-center gap-3 mb-2"><i class="fas fa-globe text-accent"></i><a href="https://quientiene.com" target="_blank" class="link-underline">quientiene.com</a></div>
+          <div class="flex items-center gap-3 mb-2"><i class="fas fa-envelope text-accent"></i><a href="mailto:info@quientiene.com" class="link-underline">info@quientiene.com</a></div>
         </div>
-        <a href="quientiene.vcf" download class="bg-secondary text-primary py-3 px-6 rounded-lg shadow-lg hover:bg-accent transition w-full block text-center font-semibold text-lg">
-          <i class="fas fa-id-card mr-2"></i> Descargar vCard
-        </a>
+        <a href="quientiene.vcf" download class="btn btn-block btn-large" aria-label="Descargar vCard"><i class="fas fa-id-card"></i><span>Descargar vCard</span></a>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-accent text-primary py-8">
-    <div class="container mx-auto text-center">
-      <p>&copy; 2025 QuienTiene. Todos los derechos reservados. | <a href="privacidad.html" class="hover:text-secondary">Política de Privacidad</a> | <a href="terminos.html" class="hover:text-secondary">Términos de Servicio</a></p>
+  <footer class="site-footer">
+    <div class="container center">
+      <p>&copy; 2025 QuienTiene. Todos los derechos reservados. | <a href="privacidad.html">Política de Privacidad</a> | <a href="terminos.html">Términos de Servicio</a></p>
     </div>
   </footer>
 </body>

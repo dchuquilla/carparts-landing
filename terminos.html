@@ -10,42 +10,31 @@
   <link rel="manifest" href="/site.webmanifest" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <style>
-    .bg-primary { background-color: #363939; }
-    .bg-secondary { background-color: #0cb193; }
-    .bg-accent { background-color: #295f56; }
-    .text-primary { color: #ffffff; }
-    .text-secondary { color: #0cb193; }
-    .text-accent { color: #295f56; }
-    .text-black-title { color: #111827; }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="font-sans bg-white text-gray-800">
+<body class="site-body">
   <!-- Header -->
-  <header class="bg-primary text-primary py-4 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center px-4">
-      <div class="text-2xl font-bold">
-        <a href="/"><img src="quien_tiene_logo_c.jpg" alt="QuienTiene" class="h-12"></a>
-      </div>
-      <nav class="space-x-4">
-        <a href="/index.html#features" class="hover:text-secondary">Características</a>
-        <a href="/index.html#pricing" class="hover:text-secondary">Planes</a>
-        <a href="/index.html#cta" class="hover:text-secondary">Probar Ahora</a>
-          <a href="contacto.html" class="hover:text-secondary" aria-label="Contacto">Contacto</a>
+  <header class="site-header">
+    <div class="container flex justify-between items-center">
+      <a href="/"><img src="quien_tiene_logo_c.jpg" alt="QuienTiene" class="logo-img" /></a>
+      <nav class="nav space-x-2">
+        <a href="/index.html#features" class="link-underline">Características</a>
+        <a href="/index.html#pricing" class="link-underline">Planes</a>
+        <a href="/index.html#cta" class="link-underline">Probar Ahora</a>
+        <a href="contacto.html" class="link-underline" aria-label="Contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
   <!-- Main Content -->
-  <main class="container mx-auto px-4 py-12">
-    <h1 class="text-4xl font-bold mb-6 text-center text-black-title">Términos y Condiciones</h1>
-    <p class="mb-6 text-gray-700">
-      Bienvenido a <strong>QuienTiene.com</strong>. Al acceder y utilizar nuestros servicios, aceptas cumplir con estos Términos y Condiciones, que regulan la relación entre los usuarios (propietarios y tiendas) y QuienTiene.com. Nuestro servicio se brinda exclusivamente en la República del Ecuador y está sujeto a las políticas y principios aquí descritos.
-    </p>
+  <main class="container section-tight">
+    <h1 class="text-3xl center mb-4">Términos y Condiciones</h1>
+    <div class="accent-line mx-auto"></div>
+    <p class="mb-6 text-dim">Bienvenido a <strong>QuienTiene.com</strong>. Al usar nuestros servicios, aceptas estos términos que regulan la relación con propietarios y tiendas dentro de Ecuador.</p>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3" id="definiciones">1. Definiciones</h2>
-      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+      <h2 class="text-xl mb-3" id="definiciones">1. Definiciones</h2>
+      <ul class="list-disc pl-6 text-dim space-y-1">
         <li><strong>Propietario:</strong> Persona natural que utiliza QuienTiene.com para buscar repuestos para su vehículo.</li>
         <li><strong>Tienda:</strong> Persona natural o jurídica que ofrece repuestos a través de QuienTiene.com.</li>
         <li><strong>Robot QuienTiene:</strong> Herramienta tecnológica que facilita la búsqueda y conexión entre propietarios y tiendas.</li>
@@ -55,9 +44,9 @@
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">2. Funcionamiento de la Plataforma</h2>
-      <p class="text-gray-700 mb-2">QuienTiene.com es una plataforma que conecta propietarios de vehículos con tiendas verificadas de repuestos. El propietario solicita un repuesto, el robot busca opciones en tiendas, y tras la aceptación de una cotización, se comparte el contacto de la tienda al propietario y viceversa. Los datos de contacto no se comparten durante la búsqueda.</p>
-      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+      <h2 class="text-xl mb-3">2. Funcionamiento de la Plataforma</h2>
+      <p class="text-dim mb-2">Conectamos propietarios con tiendas verificadas. El robot busca coincidencias y solo al aceptar una cotización se comparten los datos de contacto.</p>
+      <ul class="list-disc pl-6 text-dim space-y-1">
         <li>La venta de repuestos es 100% externa al proceso y queda fuera de la responsabilidad de QuienTiene.com.</li>
         <li>QuienTiene.com no comercializa, vende, ni garantiza repuestos; solo facilita la conexión y cotización.</li>
         <li>La negociación, pago, entrega y garantía son responsabilidad exclusiva de la tienda y el propietario.</li>
@@ -65,8 +54,8 @@
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">3. Registro y Uso de la Cuenta</h2>
-      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+      <h2 class="text-xl mb-3">3. Registro y Uso de la Cuenta</h2>
+      <ul class="list-disc pl-6 text-dim space-y-1">
         <li>El acceso a QuienTiene.com es gratuito, salvo el costo de conexión a internet.</li>
         <li>Para acceder a los servicios, el usuario debe registrarse con datos veraces y actualizarlos cuando sea necesario.</li>
         <li>La cuenta es personal, única e intransferible. Está prohibido tener más de una cuenta con los mismos datos.</li>
@@ -75,8 +64,8 @@
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">4. Obligaciones de los Usuarios</h2>
-      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+      <h2 class="text-xl mb-3">4. Obligaciones de los Usuarios</h2>
+      <ul class="list-disc pl-6 text-dim space-y-1">
         <li>Ingresar datos personales veraces y actualizarlos cuando cambien.</li>
         <li>No transferir a terceros los datos de validación de la cuenta.</li>
         <li>Notificar a QuienTiene.com sobre cualquier uso no autorizado de la cuenta.</li>
@@ -87,8 +76,8 @@
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">5. Limitaciones de Responsabilidad</h2>
-      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+      <h2 class="text-xl mb-3">5. Limitaciones de Responsabilidad</h2>
+      <ul class="list-disc pl-6 text-dim space-y-1">
         <li>QuienTiene.com no interviene en la transacción final ni en la entrega, calidad, pago o garantía de los repuestos.</li>
         <li>La plataforma solo facilita la búsqueda y el contacto entre las partes.</li>
         <li>QuienTiene.com no se responsabiliza por daños, perjuicios, pérdidas o incumplimientos derivados de la relación entre propietario y tienda.</li>
@@ -97,13 +86,13 @@
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">6. Protección de Datos Personales</h2>
-      <p class="text-gray-700">Los datos personales proporcionados serán tratados conforme a la Ley Orgánica de Protección de Datos Personales y nuestra <a href="privacidad.html" class="text-secondary underline">Política de Privacidad</a>. Se garantiza el derecho al olvido y la protección de los datos de usuarios y tiendas. Puedes solicitar la eliminación de tus datos en cualquier momento.</p>
+      <h2 class="text-xl mb-3">6. Protección de Datos Personales</h2>
+      <p class="text-dim">Los datos personales se tratan conforme a la LOPDP y nuestra <a href="privacidad.html" class="link-underline">Política de Privacidad</a>. Puedes ejercer derecho al olvido y otros derechos en cualquier momento.</p>
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">7. Uso Adecuado y Restricciones</h2>
-      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+      <h2 class="text-xl mb-3">7. Uso Adecuado y Restricciones</h2>
+      <ul class="list-disc pl-6 text-dim space-y-1">
         <li>Solo utilizarás el servicio para tu uso personal y legítimo.</li>
         <li>No autorizarás a terceros a usar tu cuenta ni la transferirás.</li>
         <li>No solicitarás repuestos con fines ilícitos o fraudulentos.</li>
@@ -113,8 +102,8 @@
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">8. Proceso de Contacto y Cotización</h2>
-      <ul class="list-disc pl-6 text-gray-700 space-y-1">
+      <h2 class="text-xl mb-3">8. Proceso de Contacto y Cotización</h2>
+      <ul class="list-disc pl-6 text-dim space-y-1">
         <li>Durante la búsqueda y cotización, los datos de contacto de propietarios y tiendas no se comparten.</li>
         <li>Solo al aceptar una cotización, se comparte el contacto de la tienda al propietario y viceversa para continuar la negociación directa.</li>
         <li>QuienTiene.com no participa ni se responsabiliza por la negociación, pago, entrega o garantía del repuesto.</li>
@@ -122,22 +111,22 @@
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">9. Modificaciones y Actualizaciones</h2>
-      <p class="text-gray-700">QuienTiene.com se reserva el derecho de modificar estos términos en cualquier momento. Las actualizaciones serán publicadas en esta página. El uso continuado implica aceptación.</p>
+      <h2 class="text-xl mb-3">9. Modificaciones y Actualizaciones</h2>
+      <p class="text-dim">Podemos modificar estos términos y publicar nuevas versiones; el uso continuado implica aceptación.</p>
     </section>
 
     <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-3">10. Contacto y Soporte</h2>
-      <p class="text-gray-700">Para consultas, soporte o ejercicio de derechos sobre tus datos, contáctanos en <a href="mailto:soporte@quientiene.com" class="text-secondary">soporte@quientiene.com</a> o por WhatsApp <a href="https://wa.me/593961674787" target="_blank" class="text-secondary">+593 96 167 4787</a>.</p>
+      <h2 class="text-xl mb-3">10. Contacto y Soporte</h2>
+      <p class="text-dim">Escríbenos a <a href="mailto:soporte@quientiene.com" class="link-underline">soporte@quientiene.com</a> o por WhatsApp <a href="https://wa.me/593961674787" target="_blank" class="link-underline">+593 96 167 4787</a> para soporte y derechos de datos.</p>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer class="bg-accent text-primary py-8">
-    <div class="container mx-auto text-center">
+  <footer class="site-footer">
+    <div class="container center">
       <p>&copy; 2023–2025 QuienTiene.com. Todos los derechos reservados. |
-        <a href="/privacidad.html" class="hover:text-secondary">Política de Privacidad</a> |
-        <a href="/terminos.html" class="hover:text-secondary">Términos y Condiciones</a>
+        <a href="/privacidad.html">Política de Privacidad</a> |
+        <a href="/terminos.html">Términos y Condiciones</a>
       </p>
     </div>
   </footer>

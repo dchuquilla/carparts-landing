@@ -111,6 +111,8 @@ a:hover { color:#fff; }
 .gap-3 { gap:.9rem; }
 .gap-4 { gap:1.25rem; }
 .columns-3 { grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); }
+.root-link { display:flex; align-items:end; font-size:1.25rem; font-weight:700; color:#fff; }
+.root-link .qt-site-name { margin-left:.5rem; }
 
 /* Links underline effect */
 .link-underline { position:relative; }

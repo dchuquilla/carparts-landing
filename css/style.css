@@ -51,7 +51,7 @@ a:hover { color:#fff; }
 .site-header { background:#000; border-bottom:2px solid var(--color-accent-hot); position:sticky; top:0; z-index:40; }
 .site-header .nav a { font-size:.85rem; font-weight:600; letter-spacing:.6px; padding:.75rem .9rem; display:inline-block; color:var(--color-silver); }
 .site-header .nav a:hover { color:#fff; }
-.site-header .logo-img { height:52px; filter:drop-shadow(0 0 6px rgba(230,0,0,.35)); }
+.site-header .logo-img { height:52px; min-width: 52px; filter:drop-shadow(0 0 6px rgba(230,0,0,.35)); }
 
 /* Buttons */
 .btn { --btn-bg:var(--gradient-accent); --btn-color:#fff; font-family:var(--font-heading); display:inline-flex; align-items:center; gap:.6rem; border:none; padding:.95rem 1.4rem; font-size:.95rem; text-transform:uppercase; letter-spacing:.8px; font-weight:600; border-radius:var(--radius-md); background:var(--btn-bg); color:var(--btn-color); cursor:pointer; position:relative; overflow:hidden; box-shadow:var(--shadow-sm); transition:background var(--transition-fast),transform var(--transition-fast); }

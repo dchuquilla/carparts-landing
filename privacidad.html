@@ -15,13 +15,18 @@
 <body class="site-body">
   <!-- Header -->
   <header class="site-header">
-    <div class="container flex justify-between items-center">
+    <div id="top-navbar" class="container flex justify-between items-center">
       <a href="/" class="root-link">
         <img src="quien_tiene_logo_d.png" alt="QuienTiene" class="logo-img" /> 
-        <span class="qt-site-name hidden sm:inline">QuienTiene</span>
-        <small class="hidden sm:inline">.com</small>
+        <span class="qt-site-name sm:inline">QuienTiene</span>
+        <small class="sm:inline">.com</small>
       </a>
-      <nav class="nav space-x-2">
+      <button class="hamburger-btn" aria-label="Toggle menu" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav space-x-2" id="nav-menu">
         <a href="/index.html#features" class="link-underline">Características</a>
         <a href="/index.html#pricing" class="link-underline">Planes</a>
         <a href="/index.html#cta" class="link-underline">Probar Ahora</a>
@@ -141,5 +146,34 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    // Hamburger menu functionality
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+    
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navMenu.classList.toggle('active');
+    });
+    
+    // Close menu when clicking on a link
+    const navLinks = navMenu.querySelectorAll('a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+      }
+    });
+  </script>
+
 </body>
 </html>

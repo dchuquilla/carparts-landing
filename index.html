@@ -27,76 +27,131 @@
 
   <!-- Header -->
   <header class="site-header">
-    <div id="top-navbar" class="container flex justify-between items-center">
+    <div id="top-navbar" class="container header-nav">
       <a href="/" class="root-link">
-        <img src="quien_tiene_logo_d.png" alt="QuienTiene" class="logo-img" /> 
-        <span class="qt-site-name sm:inline">QuienTiene</span>
-        <small class="sm:inline">.com</small>
+        <img src="quien_tiene_logo_d.png" alt="QuienTiene" class="logo-img" />
+        <span class="qt-site-name">QuienTiene<small>.com</small></span>
       </a>
       <button class="hamburger-btn" aria-label="Toggle menu" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav class="nav space-x-2" id="nav-menu">
-        <a href="#features" class="link-underline">Características</a>
-        <a href="#pricing" class="link-underline">Planes</a>
-        <a href="#cta" class="link-underline">Probar Ahora</a>
+      <nav class="nav" id="nav-menu">
+        <a href="#inicio" class="link-underline">Inicio</a>
+        <a href="#buscar" class="link-underline">Buscar repuestos</a>
+        <a href="#tiendas" class="link-underline">Tiendas</a>
+        <a href="#categorias" class="link-underline">Categorías</a>
+        <a href="#blog" class="link-underline">Blog</a>
         <a href="contacto.html" class="link-underline">Contacto</a>
-        <div class="social-divider"></div>
-        <div class="social-icons">
-          <a href="https://www.tiktok.com/@quientiene.com" target="_blank" class="social-icon" aria-label="TikTok" rel="noopener">
-            <i class="fab fa-tiktok"></i>
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61584491945702" target="_blank" class="social-icon" aria-label="Facebook" rel="noopener">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="https://www.instagram.com/quientiene_com/" target="_blank" class="social-icon" aria-label="Instagram" rel="noopener">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
       </nav>
+      <div class="header-actions">
+        <a href="#login" class="header-link-signin"><i class="fas fa-user"></i> Iniciar sesión</a>
+        <a href="#publicar" class="btn-publicar-solicitud">Publicar solicitud</a>
+      </div>
     </div>
   </header>
 
   <!-- Hero Section -->
-  <section class="hero section hero-split">
-    <div class="hero-content">
-      <div class="container">
-        <h1 class="punch hero-title">Cotizaciones de repuestos en 5 minutos</h1>
-        <div class="accent-line"></div>
-        <p class="lead mb-8 hero-subtitle">Tiendas verificadas. Precios transparentes. Cero fraude.</p>
-        <div class="hero-ctas">
-          <div class="hero-card">
-            <div class="hero-card-icon">
-              <i class="fas fa-search"></i>
+  <section class="hero section hero-new">
+    <div class="container hero-container">
+      <div class="hero-content">
+        <p class="hero-tag">Encuentra, Compara, Ahorra.</p>
+        <h1 class="hero-title">Encuentra el repuesto que necesitas en minutos</h1>
+        <p class="hero-description">Solicita tu repuesto y recibe cotizaciones de múltiples tiendas verificadas en todo Ecuador.</p>
+
+        <div class="hero-buttons">
+          <button class="btn btn-primary">Buscar repuesto</button>
+          <button class="btn btn-secondary">Publicar solicitud</button>
+        </div>
+
+        <div class="hero-search-form">
+          <div class="search-row">
+            <div class="search-field">
+              <label><i class="fas fa-car"></i> Marca del vehículo</label>
+              <select>
+                <option>Selecciona marca...</option>
+              </select>
             </div>
-            <h2 class="text-2xl mb-3">¿Buscas un repuesto?</h2>
-            <p class="lead mb-6">Conectamos tu necesidad con 45+ tiendas verificadas. Sin falsificaciones, sin sorpresas, sin esperas. Soporte 24/7.</p>
-            <a href="https://wa.me/593961674787?text=Hola%20QuienTiene%20busco%20un%20repuesto" class="btn btn-large btn-block btn-pulse" aria-label="Pedir repuesto vía WhatsApp">
-              <i class="fab fa-whatsapp"></i>
-              <span>Obtén mi cotización</span>
-            </a>
+            <div class="search-field">
+              <label><i class="fas fa-cog"></i> Modelo</label>
+              <select>
+                <option>Selecciona modelo...</option>
+              </select>
+            </div>
+            <div class="search-field">
+              <label><i class="fas fa-calendar"></i> Año</label>
+              <select>
+                <option>Selecciona año...</option>
+              </select>
+            </div>
           </div>
-          <div class="hero-card card-accent">
-            <div class="hero-card-icon">
-              <i class="fas fa-store"></i>
+          <div class="search-row">
+            <div class="search-input-large">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder="¿Qué repuesto necesitas? (ej: faro delantero, alternador, pastillas...)">
             </div>
-            <h2 class="text-2xl mb-3">¿Vendes repuestos?</h2>
-            <p class="lead mb-6">Acceso al flujo nacional. +20% ventas. Recupera inversión en 1ª venta. Solo $10/mes.</p>
-            <a href="https://web.quientiene.com/users/new" class="btn btn-large btn-block" aria-label="Registrar negocio">
-              <i class="fas fa-store"></i>
-              <span>Registra tu tienda gratis</span>
-            </a>
+            <button class="btn-search-large">
+              <i class="fas fa-search"></i> Buscar
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-features">
+          <div class="hero-feature">
+            <span class="feature-icon">✓</span>
+            <span class="feature-text">Gratis y sin compromiso</span>
+          </div>
+          <div class="hero-feature">
+            <span class="feature-icon">✓</span>
+            <span class="feature-text">Tiendas verificadas</span>
+          </div>
+          <div class="hero-feature">
+            <span class="feature-icon">✓</span>
+            <span class="feature-text">Repuestos en minutos</span>
           </div>
         </div>
       </div>
+
+      <div class="hero-image-side">
+        <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80" alt="Repuestos de vehículos" class="hero-image">
+      </div>
     </div>
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=800&q=80" alt="Repuestos de auto - Llantas, baterías, filtros" class="hero-img-main">
-      <div class="hero-image-overlay">
-        <div class="hero-badge">500+ Repuestos</div>
-        <div class="hero-badge">45+ Tiendas</div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="section how-it-works">
+    <div class="container">
+      <h2 class="text-3xl center mb-12">¿Cómo funciona?</h2>
+      <div class="how-it-works-grid">
+        <div class="how-it-works-card">
+          <div class="how-it-works-icon step-1">
+            <i class="fas fa-edit"></i>
+          </div>
+          <h3>1. Publica tu solicitud</h3>
+          <p>Cuéntanos qué repuesto necesitas para tu vehículo.</p>
+        </div>
+        <div class="how-it-works-card">
+          <div class="how-it-works-icon step-2">
+            <i class="fas fa-store"></i>
+          </div>
+          <h3>2. Tiendas responden</h3>
+          <p>Las tiendas verificadas enviarán sus cotizaciones.</p>
+        </div>
+        <div class="how-it-works-card">
+          <div class="how-it-works-icon step-3">
+            <i class="fas fa-balance-scale"></i>
+          </div>
+          <h3>3. Compara opciones</h3>
+          <p>Compara precios, disponibilidad y tiempos de entrega.</p>
+        </div>
+        <div class="how-it-works-card">
+          <div class="how-it-works-icon step-4">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>4. Elige y recibe</h3>
+          <p>Elige tu opción y recibe tu repuesto.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -106,23 +161,38 @@
     <div class="container">
       <div class="grid gap-4 md:grid-cols-3">
         <div class="stat-card">
-          <h3 class="stat-number">500+</h3>
-          <p class="stat-label">Repuestos disponibles</p>
+          <div class="stat-icon icon-1">
+            <i class="fas fa-box"></i>
+          </div>
+          <div>
+            <h3 class="stat-number">500+</h3>
+            <p class="stat-label">Repuestos disponibles</p>
+          </div>
         </div>
         <div class="stat-card">
-          <h3 class="stat-number">45+</h3>
-          <p class="stat-label">Tiendas verificadas</p>
+          <div class="stat-icon icon-2">
+            <i class="fas fa-store"></i>
+          </div>
+          <div>
+            <h3 class="stat-number">45+</h3>
+            <p class="stat-label">Tiendas verificadas</p>
+          </div>
         </div>
         <div class="stat-card">
-          <h3 class="stat-number">5 min</h3>
-          <p class="stat-label">Tiempo promedio de cotización</p>
+          <div class="stat-icon icon-3">
+            <i class="fas fa-clock"></i>
+          </div>
+          <div>
+            <h3 class="stat-number">5 min</h3>
+            <p class="stat-label">Tiempo promedio de cotización</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Categories Section -->
-  <section class="section bg-dark-alt">
+  <section class="section">
     <div class="container">
       <h2 class="text-3xl center mb-8">Categorías populares de repuestos</h2>
       <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-6">
@@ -206,9 +276,9 @@
   </section>
 
   <!-- Features Section -->
-  <section id="features" class="section bg-dark-alt">
+  <section id="features" class="section">
     <div class="container">
-      <h2 class="text-3xl center mb-6">¿Por qué elegir QuienTiene?</h2>
+      <h2 class="text-3xl center mb-6">¿Cómo funciona?</h2>
       <div class="grid columns-3 gap-4">
         <div class="card center">
           <i class="fas fa-robot text-accent text-4xl mb-2"></i>
@@ -257,35 +327,6 @@
           <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Cliente Luis" class="w-20 h-20 rounded-full mb-3" />
           <p class="text-dim italic mb-3">"Soporte atento y rápido. Lo recomiendo a mis colegas."</p>
           <span class="font-semibold">Luis F.</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section id="pricing" class="section bg-dark-alt">
-    <div class="container">
-      <h2 class="text-3xl center mb-6">Planes y Precios</h2>
-      <div class="grid gap-4 md:grid-cols-2">
-        <div class="card pricing-card">
-          <h3 class="mb-2">Propietarios</h3>
-          <p class="price-tag">Gratis</p>
-          <ul class="text-dim mb-4">
-            <li>Acceso 24/7 al bot</li>
-            <li>Soporte 24/7</li>
-          </ul>
-          <a href="https://wa.me/593961674787?text=Hola%20QuienTiene" class="btn btn-block" aria-label="Plan propietarios">Sin costo</a>
-        </div>
-        <div class="card pricing-card card-accent">
-          <h3 class="mb-2">Tiendas de repuestos</h3>
-          <p class="price-tag">$10 <span class="price-period">/mes</span></p>
-          <ul class="text-dim mb-4">
-            <li>Aumento estimado hasta 20%</li>
-            <li>Soporte 24/7</li>
-            <li>Catálogo de solicitudes</li>
-            <li>Recupera inversión en primera venta</li>
-          </ul>
-          <a href="https://web.quientiene.com/users/new" target="_blank" class="btn btn-block" aria-label="Registrar tienda">Registrarme</a>
         </div>
       </div>
     </div>

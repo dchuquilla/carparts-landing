@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "brand_name": "QuienTiene.com",
+  "website_url": "https://quientiene.com",
+  "extracted_at": "2026-05-12T09:51:08.805853",
+  "voice": {
+    "formal_casual": 7,
+    "rational_emotional": 6,
+    "playful_serious": 6,
+    "bold_subtle": 8,
+    "traditional_innovative": 9,
+    "expert_accessible": 8,
+    "descriptors": [
+      "tech-forward",
+      "trustworthy",
+      "direct",
+      "modern",
+      "bold"
+    ]
+  },
+  "colors": {
+    "primary": "#FF0000",
+    "secondary": [
+      "#FF1744",
+      "#00FFFF",
+      "#0080FF"
+    ],
+    "background": "#0A0A0A",
+    "text": "#B0B0B0",
+    "accent": "#FF1744",
+    "forbidden": [
+      "pastel colors",
+      "light backgrounds"
+    ]
+  },
+  "typography": {
+    "heading_font": "Orbitron",
+    "body_font": "Inter",
+    "pairing_descriptor": "futuristic uppercase headings with clean, modern body text"
+  },
+  "imagery": {
+    "style": "mixed - flat design icons + photography",
+    "subjects": [
+      "technology",
+      "vehicles",
+      "network/connection",
+      "trust"
+    ],
+    "composition": "geometric patterns, dark backgrounds with neon accents",
+    "forbidden": [
+      "cheesy stock photos",
+      "low-quality imagery"
+    ]
+  },
+  "aesthetic": {
+    "mood_keywords": [
+      "futuristic",
+      "technical",
+      "reliable",
+      "energetic",
+      "confident"
+    ],
+    "texture": "minimal with geometric overlays",
+    "negative_space": "generous"
+  },
+  "brand_values": [
+    "Trust",
+    "Innovation",
+    "Speed",
+    "Reliability",
+    "Security"
+  ],
+  "target_audience": {
+    "age_range": "25-55",
+    "profession": "vehicle owners, mechanics, auto parts dealers",
+    "pain_points": [
+      "finding correct parts",
+      "fraud concerns",
+      "time-consuming search",
+      "price transparency"
+    ],
+    "aspirations": [
+      "quick solutions",
+      "trusted sources",
+      "convenience",
+      "peace of mind"
+    ]
+  }
+}

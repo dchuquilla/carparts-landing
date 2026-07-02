@@ -45,9 +45,8 @@
         <a href="#blog" class="link-underline">Blog</a>
         <a href="contacto.html" class="link-underline">Contacto</a>
       </nav>
-      <div class="header-actions">
+      <div class="header-actions" style="display: none;">
         <a href="#login" class="header-link-signin"><i class="fas fa-user"></i> Iniciar sesión</a>
-        <a href="#publicar" class="btn-publicar-solicitud">Publicar solicitud</a>
       </div>
     </div>
   </header>
@@ -59,11 +58,6 @@
         <p class="hero-tag">Encuentra, Compara, Ahorra.</p>
         <h1 class="hero-title">Encuentra el repuesto que necesitas en minutos</h1>
         <p class="hero-description">Solicita tu repuesto y recibe cotizaciones de múltiples tiendas verificadas en todo Ecuador.</p>
-
-        <div class="hero-buttons">
-          <button class="btn btn-primary">Buscar repuesto</button>
-          <button class="btn btn-secondary">Publicar solicitud</button>
-        </div>
 
         <div class="hero-search-form">
           <div class="search-row">
@@ -137,7 +131,7 @@
           <div class="how-it-works-icon step-1">
             <i class="fas fa-edit"></i>
           </div>
-          <h3>1. Publica tu solicitud</h3>
+          <h3>1. Envía tu solicitud</h3>
           <p>Cuéntanos qué repuesto necesitas para tu vehículo.</p>
         </div>
         <div class="how-it-works-card">
@@ -206,32 +200,32 @@
       <h2 class="text-3xl center mb-8">Categorías populares de repuestos</h2>
       <div class="grid gap-4 md:grid-cols-3 lg:grid-cols-6">
         <a href="https://wa.me/593961674787?text=Busco%20LLANTAS%20para%20mi%20auto" class="category-card" aria-label="Categoría Llantas">
-          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=300&q=80')"></div>
+          <div class="category-image" style="background-image: url('category_llantas.jpg')"></div>
           <h3>Llantas</h3>
           <p class="text-dim">+80 opciones</p>
         </a>
         <a href="https://wa.me/593961674787?text=Busco%20BATERIA%20para%20mi%20auto" class="category-card" aria-label="Categoría Baterías">
-          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1562981990-cf08fb7c1d3c?auto=format&fit=crop&w=300&q=80')"></div>
+          <div class="category-image" style="background-image: url('category_baterias.jpg')"></div>
           <h3>Baterías</h3>
           <p class="text-dim">+45 opciones</p>
         </a>
         <a href="https://wa.me/593961674787?text=Busco%20FILTROS%20para%20mi%20auto" class="category-card" aria-label="Categoría Filtros">
-          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1517420879847-7fc97e98f07e?auto=format&fit=crop&w=300&q=80')"></div>
+          <div class="category-image" style="background-image: url('category_filtros.jpg')"></div>
           <h3>Filtros</h3>
           <p class="text-dim">+120 opciones</p>
         </a>
         <a href="https://wa.me/593961674787?text=Busco%20FRENOS%20para%20mi%20auto" class="category-card" aria-label="Categoría Frenos">
-          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1465056836643-15acc336981f?auto=format&fit=crop&w=300&q=80')"></div>
+          <div class="category-image" style="background-image: url('category_frenos.jpg')"></div>
           <h3>Frenos</h3>
           <p class="text-dim">+60 opciones</p>
         </a>
         <a href="https://wa.me/593961674787?text=Busco%20ACEITE%20para%20mi%20auto" class="category-card" aria-label="Categoría Aceites">
-          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1618516212624-90de5ad0627a?auto=format&fit=crop&w=300&q=80')"></div>
+          <div class="category-image" style="background-image: url('category_aceites.jpg')"></div>
           <h3>Aceites</h3>
           <p class="text-dim">+90 opciones</p>
         </a>
         <a href="https://wa.me/593961674787?text=Busco%20AMORTIGUADORES%20para%20mi%20auto" class="category-card" aria-label="Categoría Amortiguadores">
-          <div class="category-image" style="background-image: url('https://images.unsplash.com/photo-1487730116645-74489c95b41b?auto=format&fit=crop&w=300&q=80')"></div>
+          <div class="category-image" style="background-image: url('category_amortiguadores.jpg')"></div>
           <h3>Amortiguadores</h3>
           <p class="text-dim">+55 opciones</p>
         </a>
@@ -240,7 +234,7 @@
   </section>
 
   <!-- Partner Stores Section -->
-  <section class="section">
+  <section class="section" style="display: none;">
     <div class="container">
       <h2 class="text-3xl center mb-8">Tiendas asociadas verificadas</h2>
       <div class="partners-grid">
@@ -287,7 +281,7 @@
   <!-- Features Section -->
   <section id="features" class="section">
     <div class="container">
-      <h2 class="text-3xl center mb-6">¿Cómo funciona?</h2>
+      <h2 class="text-3xl center mb-6">Beneficios</h2>
       <div class="grid columns-3 gap-4">
         <div class="card center">
           <i class="fas fa-robot text-accent text-4xl mb-2"></i>
@@ -313,7 +307,7 @@
     <div class="bg-image-overlay cta-bg-auto"></div>
     <div class="container cta-inner center">
       <h2 class="text-3xl mb-4">¿Listo para encontrar tus repuestos?</h2>
-      <a href="https://wa.me/593961674787?text=Hola%20QuienTiene" target="_blank" class="btn btn-large btn-pulse" aria-label="Abrir WhatsApp para pedir repuesto">Pedir mi repuesto ahora</a>
+      <a href="https://wa.me/593961674787?text=Hola%20QuienTiene.%20Necesito%20un%20repuesto" target="_blank" class="btn btn-large btn-pulse" aria-label="Abrir WhatsApp para pedir repuesto">Pedir mi repuesto ahora</a>
     </div>
   </section>
 
@@ -323,17 +317,17 @@
       <h2 class="text-3xl center mb-6">Lo que dicen nuestros clientes</h2>
       <div class="grid columns-3 gap-4">
         <div class="testimonial card center">
-          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Cliente Carlos" class="w-20 h-20 rounded-full mb-3" />
+          <img src="testimonial_carlos.jpg" alt="Cliente Carlos" class="w-20 h-20 rounded-full mb-3" />
           <p class="text-dim italic mb-3">"Encontré el repuesto que buscaba en minutos. Todo muy confiable."</p>
           <span class="font-semibold">Carlos M.</span>
         </div>
         <div class="testimonial card center">
-          <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Cliente Andrea" class="w-20 h-20 rounded-full mb-3" />
+          <img src="testimonial_andrea.jpg" alt="Cliente Andrea" class="w-20 h-20 rounded-full mb-3" />
           <p class="text-dim italic mb-3">"Tiendas verificadas y proceso claro. Me sentí segura comprando."</p>
           <span class="font-semibold">Andrea P.</span>
         </div>
         <div class="testimonial card center">
-          <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Cliente Luis" class="w-20 h-20 rounded-full mb-3" />
+          <img src="testimonial_luis.jpg" alt="Cliente Luis" class="w-20 h-20 rounded-full mb-3" />
           <p class="text-dim italic mb-3">"Soporte atento y rápido. Lo recomiendo a mis colegas."</p>
           <span class="font-semibold">Luis F.</span>
         </div>

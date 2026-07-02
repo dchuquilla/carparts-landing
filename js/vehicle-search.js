@@ -380,6 +380,84 @@ document.addEventListener('click', (e) => {
   }
 });
 
+// ========== FUNCIONALIDAD DE BÚSQUEDA/WHATSAPP ==========
+
+const searchButton = document.getElementById('searchButton');
+const sparePartInput = document.getElementById('sparePartInput');
+const WHATSAPP_NUMBER = '593961674787';
+
+// Función para enviar mensaje a WhatsApp
+function sendToWhatsApp() {
+  // Obtener valores
+  const make = makesInput.value.trim();
+  const model = modelsInput.value.trim();
+  const year = yearInput.value.trim();
+  const sparePart = sparePartInput.value.trim();
+
+  // Validar que los campos estén completos
+  if (!make) {
+    alert('Por favor selecciona una marca de vehículo');
+    makesInput.focus();
+    return;
+  }
+
+  if (!model) {
+    alert('Por favor selecciona un modelo');
+    modelsInput.focus();
+    return;
+  }
+
+  if (!year) {
+    alert('Por favor ingresa el año del vehículo');
+    yearInput.focus();
+    return;
+  }
+
+  if (!sparePart) {
+    alert('Por favor ingresa el repuesto que necesitas');
+    sparePartInput.focus();
+    return;
+  }
+
+  // Validar año
+  const yearNum = parseInt(year, 10);
+  if (year.length !== 4 || yearNum < 1900) {
+    alert('Por favor ingresa un año válido (mayor a 1900)');
+    yearInput.focus();
+    return;
+  }
+
+  // Crear mensaje
+  const message = `Hola, necesito un repuesto para mi vehículo:\n\n` +
+    `🚗 Marca: ${make}\n` +
+    `🔧 Modelo: ${model}\n` +
+    `📅 Año: ${year}\n` +
+    `⚙️ Repuesto: ${sparePart}`;
+
+  // Codificar mensaje para URL
+  const encodedMessage = encodeURIComponent(message);
+
+  // Crear URL de WhatsApp
+  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodedMessage}`;
+
+  // Abrir WhatsApp en nueva ventana
+  window.open(whatsappUrl, '_blank');
+}
+
+// Event listener para el botón de búsqueda
+if (searchButton) {
+  searchButton.addEventListener('click', sendToWhatsApp);
+}
+
+// También permitir enviar con Enter en el campo de repuesto
+if (sparePartInput) {
+  sparePartInput.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+      sendToWhatsApp();
+    }
+  });
+}
+
 // ========== INICIALIZAR ==========
 
 document.addEventListener('DOMContentLoaded', loadMakes);

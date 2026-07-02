@@ -345,7 +345,108 @@ a:hover { color:var(--color-accent-alt); }
   .how-it-works h2 { font-size:1.8rem; margin-bottom:2rem; }
   .how-it-works-card { padding:0; }
   .how-it-works-icon { width:60px; height:60px; font-size:1.5rem; }
+  .search-row { grid-template-columns:1fr; }
+  .search-row:last-child { grid-template-columns:1fr; }
+  .autocomplete-dropdown { max-height:250px; }
 }
+
+/* Autocomplete Container */
+.autocomplete-container {
+  position:relative;
+}
+
+.autocomplete-input {
+  width:100%;
+  padding:.8rem;
+  border:1px solid #DDD;
+  border-radius:4px;
+  font-size:.9rem;
+  font-family:var(--font-base);
+  background:#fff;
+  transition:border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.autocomplete-input:focus {
+  outline:none;
+  border-color:var(--color-accent);
+  box-shadow:0 0 0 3px rgba(255,0,0,.1);
+}
+
+.autocomplete-input:disabled {
+  background:#F5F5F5;
+  cursor:not-allowed;
+  color:#999;
+}
+
+/* Autocomplete Dropdown */
+.autocomplete-dropdown {
+  position:absolute;
+  top:100%;
+  left:0;
+  right:0;
+  background:#fff;
+  border:1px solid #DDD;
+  border-top:none;
+  border-radius:0 0 4px 4px;
+  list-style:none;
+  margin:0;
+  padding:0;
+  max-height:300px;
+  overflow-y:auto;
+  z-index:1000;
+  box-shadow:0 4px 12px rgba(0,0,0,.1);
+}
+
+.autocomplete-item {
+  padding:.75rem 1rem;
+  cursor:pointer;
+  transition:background-color var(--transition-fast);
+  border-bottom:1px solid #F0F0F0;
+}
+
+.autocomplete-item:last-child {
+  border-bottom:none;
+}
+
+.autocomplete-item:hover,
+.autocomplete-item.active {
+  background-color:#F5F5F5;
+  color:var(--color-accent);
+  font-weight:500;
+}
+
+.autocomplete-item.active {
+  background-color:#FFE8E8;
+  border-left:3px solid var(--color-accent);
+  padding-left:calc(1rem - 3px);
+}
+
+/* Year Input Styles */
+#yearInput {
+  padding:.8rem;
+  border:1px solid #DDD;
+  border-radius:4px;
+  font-size:.9rem;
+  font-family:var(--font-base);
+  background:#fff;
+  transition:border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+#yearInput:focus {
+  outline:none;
+  border-color:var(--color-accent);
+  box-shadow:0 0 0 3px rgba(255,0,0,.1);
+}
+
+#yearInput.error {
+  border-color:#DC2626;
+  background:#FEE2E2;
+}
+
+#yearInput.error:focus {
+  box-shadow:0 0 0 3px rgba(220,38,38,.1);
+}
+
 @media (prefers-reduced-motion:reduce){
   * { animation:none !important; transition:none !important; }
 }

@@ -69,21 +69,34 @@
           <div class="search-row">
             <div class="search-field">
               <label><i class="fas fa-car"></i> Marca del vehículo</label>
-              <select>
-                <option>Selecciona marca...</option>
-              </select>
+              <div class="autocomplete-container">
+                <input
+                  type="text"
+                  id="makesInput"
+                  class="autocomplete-input"
+                  placeholder="Busca marca..."
+                  autocomplete="off"
+                >
+                <ul id="makesDropdown" class="autocomplete-dropdown" style="display: none;"></ul>
+              </div>
             </div>
             <div class="search-field">
               <label><i class="fas fa-cog"></i> Modelo</label>
-              <select>
-                <option>Selecciona modelo...</option>
-              </select>
+              <div class="autocomplete-container">
+                <input
+                  type="text"
+                  id="modelsInput"
+                  class="autocomplete-input"
+                  placeholder="Selecciona marca primero"
+                  autocomplete="off"
+                  disabled
+                >
+                <ul id="modelsDropdown" class="autocomplete-dropdown" style="display: none;"></ul>
+              </div>
             </div>
             <div class="search-field">
               <label><i class="fas fa-calendar"></i> Año</label>
-              <select>
-                <option>Selecciona año...</option>
-              </select>
+              <input type="text" id="yearInput" placeholder="Ej: 2023" maxlength="4" inputmode="numeric">
             </div>
           </div>
           <div class="search-row">
@@ -381,6 +394,7 @@
     });
   </script>
 
+  <script src="js/vehicle-search.js"></script>
 </body>
 
 </html>
